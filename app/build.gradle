@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -29,6 +30,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures {
+        viewBinding true
+    }
 }
 
 dependencies {
@@ -37,6 +42,30 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    
+    //Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.4.2'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.4.2'
+
+    //Firebase
+    implementation platform('com.google.firebase:firebase-bom:29.3.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-database'
+
+    //ExoPlayer
+    def versionExoPlayer = "2.17.1"
+    implementation "com.google.android.exoplayer:exoplayer:$versionExoPlayer"
+    implementation "com.google.android.exoplayer:exoplayer-core:$versionExoPlayer"
+    implementation "com.google.android.exoplayer:exoplayer-dash:$versionExoPlayer"
+    implementation "com.google.android.exoplayer:exoplayer-hls:$versionExoPlayer"
+    implementation "com.google.android.exoplayer:exoplayer-smoothstreaming:$versionExoPlayer"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$versionExoPlayer"
+
+    // Picasso
+    def picassoVersion = '2.71828'
+    implementation "com.squareup.picasso:picasso:$picassoVersion"
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'

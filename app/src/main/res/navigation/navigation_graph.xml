@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/movieListFragmentFragment">
+    <fragment
+        android:id="@+id/moviePlayerFragment"
+        android:name="com.easyprog.myfilmsapp.ui.movie_player.MoviePlayerFragment"
+        android:label="fragment_movie_player"
+        tools:layout="@layout/fragment_movie_player" />
+    <fragment
+        android:id="@+id/movieListFragmentFragment"
+        android:name="com.easyprog.myfilmsapp.ui.movie_list.MovieListFragment"
+        android:label="fragment_movie_list_fragment"
+        tools:layout="@layout/fragment_movie_list_fragment" >
+        <action
+            android:id="@+id/action_movieListFragmentFragment_to_moviePlayerFragment"
+            app:destination="@id/moviePlayerFragment" />
+    </fragment>
+</navigation>

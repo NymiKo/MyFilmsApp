@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "68727751160",
+    "firebase_url": "https://myfilms-f380c-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "myfilms-f380c",
+    "storage_bucket": "myfilms-f380c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68727751160:android:7a4807447c2da7ef1d160d",
+        "android_client_info": {
+          "package_name": "com.easyprog.myfilmsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68727751160-8qsmbmfgqu9i4m51d3rpscij6nil6tfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARUNM9HGvsUcoxaKkc6v2FEsuHX6MHR2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68727751160-8qsmbmfgqu9i4m51d3rpscij6nil6tfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
